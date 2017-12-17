@@ -1,0 +1,222 @@
+//MENU ITEMS START-------------------------------------------->
+.menu-cont {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.menu_left_style {
+	position: absolute;
+	width: 300px;
+	height: 20%;
+	top: 0;
+	left: 0;
+	#menu_left_text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		text-align: center;
+		@include shadow_tran(1s);
+	}
+	.menu_left_svg {
+		max-height: 10%;
+	}
+}
+.menu_right_style {
+	position: absolute;
+	width: 300px;
+	height: 20%;
+	top: 0;
+	right: 0;
+	#menu_right_text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		text-align: center;
+		@include shadow_tran(1s);
+	}
+	.menu_right_svg {
+		max-height: 10%;
+	}
+}
+.menu_bot_style {
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	left: 0;
+	bottom: 0;
+	#menu_bot_text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		text-align: center;
+		@include shadow_tran(1s);
+	}
+	.menu_bot_svg {}
+}
+//MENU ITEMS END ---------------------------------------------->
+// letters rolling in start -------------------------------------->
+.letter {
+	transform: rotateY(0deg);
+	-webkit-perspective: 800px;
+	/* Chrome, Safari, Opera  */
+	perspective: 800px;
+	text-align: center;
+}
+#text_here_about {
+	width: 100%;
+	perspective: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+#text_here_contact {
+	width: 100%;
+	perspective: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+#text_here_port {
+	width: 100%;
+	perspective: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+#text_here_home {
+	width: 100%;
+	perspective: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+//RESPONSIVE MENU ---------------------------------------------->
+.resp_menu_cont {
+	height: 20%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.resp_menu_bg {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	.resp_menu_style {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		height: 50%;
+		@include shadow_tran(1s);
+		text-align: center;
+	}
+	.resp_menu_sm {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+	}
+	#text_here_about_resp {
+		width: 100%;
+		perspective: 800px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+	}
+	#text_here_contact_resp {
+		width: 100%;
+		perspective: 800px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+	}
+	#text_here_home_resp {
+		width: 100%;
+		perspective: 800px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+	}
+}
+.resp_menu_svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.resp_menu_svg_sm {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.hide_resp_bg {
+	display: none;
+	div {
+		display: none;
+	}
+	span {
+		display: none;
+	}
+}
+.hide_resp_md {
+	display: none;
+	div {
+		display: none;
+	}
+	span {
+		display: none;
+	}
+}
+.hide_resp_sm {
+	display: block;
+	div {
+		display: block;
+	}
+	span {
+		display: block;
+	}
+}
+.resp_menu_style:hover {
+	text-shadow: 0px 0px 15px rgba(0, 255, 10, 0.5);
+}
+#menu_left_text:hover {
+	text-shadow: 0px 0px 15px rgba(0, 255, 10, 0.5);
+}
+#menu_right_text:hover {
+	text-shadow: 0px 0px 15px rgba(0, 255, 10, 0.5);
+}
+#menu_bot_text:hover {
+	text-shadow: 0px 0px 1px rgba(0, 255, 10, 0.5);
+}

@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+
+.c_main_stroke {
+	stroke: #00ff0a;
+	stroke-Width: 6;
+}
+.menu_path_style {
+	stroke: #00ff0a;
+	stroke-Width: 6;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+}
+.svg_stroke {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+}
+.svg_index {
+	z-index: -10;
+}
+.svg_index_top {
+	z-index: 10;
+}

@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    
+    a {
+	text-decoration: none;
+    }
+    
+   
+    a:link{color: rgba(169, 60, 196, 0.67);}
+a:visited{color: inherit;} 
+a:hover{color: rgba(169, 60, 196, 0.61);} 
+a:active{color: inherit;} 
+
+}
+
+.hide {
+	overflow: hidden;
+}
+.hide_resp {
+	display: none;
+	div {
+		display: none;
+	}
+	span {
+		display: none;
+	}
+}

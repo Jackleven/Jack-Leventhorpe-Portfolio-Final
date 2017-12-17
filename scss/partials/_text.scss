@@ -1,0 +1,44 @@
+@import "_vari";
+.read_txt {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.8em;
+}
+.sm_head {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.600em;
+	letter-spacing: 6px;
+}
+.bg_head {
+	font-family: 'Allerta', sans-serif;
+	font-size: 1.750em;
+	letter-spacing: 8px;
+}
+.uti_txt {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 2em;
+}
+
+.m_read_txt {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	@include responsive-font(8vw, 1.5em, 2.2em, 2em); //using responsive fonts (with min, max and viewport width) that I calculated in _vari.scss
+}
+.m_sm_head {
+	font-family: 'Raleway', sans-serif;
+	@include responsive-font(7vw, 1.05em, 2em, 1.8em);
+	letter-spacing: 8px;
+}
+.m_bg_head {
+	font-family: 'Allerta', sans-serif;
+	@include responsive-font(7vw, 1.5em, 1.75em, 1.5em);
+	letter-spacing: 8px;
+}
+.m_uti_txt {
+	font-family: 'Titillium Web', sans-serif;
+	@include responsive-font(8vw, 1.5em, 2.1em, 2em);
+}
+
+
+.m_uti_txt_port {
+	font-family: 'Titillium Web', sans-serif;
+	@include responsive-font(5vw, 1.5em, 2.1em, 2em);
+}

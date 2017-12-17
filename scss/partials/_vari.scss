@@ -1,0 +1,41 @@
+//Because I am using a precomplier I can use SCSS/SASS to do a few operations
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) { //creating operation to make responsive fonts with a maximum em size and a minimum em size relative to the view port size
+    
+    
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1); //declaring  SCSS variables
+    
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width'); //variable assigned with values I will give it
+    
+  $min-breakpoint: $min / $responsive-unitless * 100; //responsive break points
+    
+    
+  
+      @media (max-#{$dimension}: #{$min-breakpoint}) { //changing depending on min value I assign
+        font-size: $min;
+        }
+  
+      @if $max {
+        $max-breakpoint: $max / $responsive-unitless * 100; //creating break points after min is established
+
+        @media (min-#{$dimension}: #{$max-breakpoint}) {    //changing depending on max value I assign
+          font-size: $max;
+        }
+      }
+  
+      @if $fallback { //fallback front for special cases
+        font-size: $fallback;
+      }
+  
+  font-size: $responsive;
+}
+
+
+
+@mixin shadow_tran($time) { //variable to make CSS shadow transisions with time I will assign
+    
+    -webkit-transition: text-shadow $time ease; //cross browser compatability
+-moz-transition: text-shadow $time ease;
+-o-transition: text-shadow $time ease;
+transition: text-shadow $time ease;
+ 
+}

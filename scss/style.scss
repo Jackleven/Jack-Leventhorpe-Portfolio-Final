@@ -1,0 +1,16 @@
+@import "partials/_vari";
+@import "partials/_general";
+@import "partials/_svgs";
+@import "partials/_tween";
+@import "partials/_menu";
+@import "partials/_main_menu";
+@import "partials/_about";
+@import "partials/_text";
+@import "partials/_contact";
+@import "partials/_port";
+@import "partials/_media_q";
+@import "partials/_media_q_dsk";
+@import "partials/_media_q_tblt";
+//I am using a precomplier to create a single final CSS file
+//Here I am importing the code from the SCSS files for the precomplier to use
+//I import them in this specific order to avoid errors and the like
